@@ -15,8 +15,9 @@ class TrackingMap extends Component {
         this.fetchNewLocation = this.fetchNewLocation.bind(this);
     }
 
-    componentDidMount() {
-        setInterval(this.fetchNewLocation, 5000);
+    componentWillMount() {
+        this.props.shared.showLoader();
+        setInterval(this.fetchNewLocation, 3000);
     }
 
     fetchNewLocation() {
@@ -29,7 +30,7 @@ class TrackingMap extends Component {
                         lat: parseFloat(res.data.lat),
                         lng: parseFloat(res.data.lng)
                     },
-                    key: `${res.data.lat},${res.data.lng}`,
+                    key: res.data.id,
                     defaultAnimation: 2
                 };
 
@@ -59,7 +60,6 @@ class TrackingMap extends Component {
                     }
                     googleMapElement={
                         <GoogleMap
-                            ref={(map) => console.log(map)}
                             defaultZoom={3}
                             center={this.state.mapCenter}
                         >

@@ -2,7 +2,7 @@
 
 ## Installations & Scripts
 * Install and update packages: `npm install` from root folder.
-* Run server on local code (/src folder): `npm start`
+* Run server on local code (/src folder): `npm start` (port 4557)
 * Run server on production code (/dist folder): `npm run build`
 
 ###package.json

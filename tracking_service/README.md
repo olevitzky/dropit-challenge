@@ -5,6 +5,7 @@
 * Install sequelize-cli.
 * Setup the config.js file and make sure the database setting are correct and running.
 * Run `node_modules/.bin/sequelize db:migrate`
+* Run `npm start` to start server (port 4555)
 
 ###Available API's:
 

@@ -1,0 +1,16 @@
+#logs_page {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    color: white;
+
+    &.low {
+      color: orange;
+    }
+    &.high {
+      color: red;
+    }
+  }
+}

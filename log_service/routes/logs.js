@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
   });
 });
 
-/* POST create a new coordinates. */
+/* POST create a new LogMessage. */
 router.post('/', function(req, res, next) {
   let severity = req.body.severity;
   let content = req.body.content;

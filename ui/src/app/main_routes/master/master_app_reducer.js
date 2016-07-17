@@ -14,7 +14,6 @@ const initialState = deepFreeze({
 
 //IMPORTANT: Note that with Redux, state should NEVER be changed.
 //State is considered immutable. Instead, create a copy of the state passed and set new values on the copy.
-//MORE IMPORTANT: we need to implement an immutable object for initialState. In the meantime, do not use 2 dots notation.
 export default function masterAppState(state = initialState, action) {
     switch (action.type) {
     // NOTIFICATIONS

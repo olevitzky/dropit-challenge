@@ -22,12 +22,3 @@ export function showLoader() {
 export function hideLoader() {
     return {type: HIDE_LOADER};
 }
-
-// OVERLAYS
-export function dimBodyOverlay() {
-    return {type: DIM_BODY_OVERLAY};
-}
-
-export function undimBodyOverlay() {
-    return {type: UNDIM_BODY_OVERLAY};
-}

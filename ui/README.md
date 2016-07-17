@@ -5,6 +5,11 @@
 * Run server on local code (/src folder): `npm start` (port 4557)
 * Run server on production code (/dist folder): `npm run build`
 
+###Available routes:
+
+* /map - Display a Google map with a location marker while its data keep being fetch via the Tracking service. The map will change the view when a new location is found.
+* /logs - Display all the logs which exists on the Logs service. The scroll view will update when a new message is received.
+
 ###package.json
 
 | **Script** | **Description** |
